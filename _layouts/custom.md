@@ -18,8 +18,8 @@ layout: default
         {% if include.is_post %} {% include social/share_buttons.html %} {% endif %}
 
         <!-- Tag list -->
-        {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
-        {% include default/tags_list.html tags=tag_list %}
+        <!-- {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %} -->
+        <!-- {% include default/tags_list.html tags=tag_list %} -->
     </div>
 
 </article>

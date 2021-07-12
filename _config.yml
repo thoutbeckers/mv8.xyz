@@ -1,29 +1,29 @@
 # SITE CONFIGURATION
-baseurl: "/Type-on-Strap"
-url: "https://sylhare.github.io"
+baseurl: ""
+url: "https://mv8.xyz.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
-title: Type on Strap                                    # site's title
-description: "A website with blog posts and pages"      # used by search engines
+title: Marian van Agt                                    # site's title
+description: "Website ter nagedachtenis van Marian van Agt"      # used by search engines
 avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: Change <code>header_text</code> in <code>_config.yml</code>  # Change Blog header text
+header_text: Website ter nagedachtenis van Marian van Agt  # Change Blog header text
 header_feature_image: assets/img/pexels/triangular.jpeg
 footer_text: >
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
-post_navigation: true
+post_navigation: false
 color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
 
 # Features
 # More in the _data folder for share buttons, author and language
 # For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
-katex: true                                             # Enable if using math markup
-mermaid: true                                           # Enable mermaid-js for sequence and diagrams
+katex: false                                             # Enable if using math markup
+mermaid: false                                           # Enable mermaid-js for sequence and diagrams
 google_analytics:                                       # Tracking ID, e.g. "UA-000000-01"
 cookie_consent: false                                   # To respect the usage of cookies
 color_theme: auto                                       # auto, dark or light
@@ -40,7 +40,7 @@ comments:
 paginate: 5
 paginate_path: "/blog/page:num"
 
-# PORTFOLIO
+#PORTFOLIO
 collections:
   portfolio:
     output: true
