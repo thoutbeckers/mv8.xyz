@@ -13,9 +13,9 @@ layout: page
     {% endif %}
     {% endfor %}
 
-    <!-- cycles through portfolio collection to get tags -->
-    {% assign portfolio = site.portfolio | map: 'tags' | join: ',' | split: ',' | uniq %}
-    {% for tag in portfolio %}
+    <!-- cycles through muziek collection to get tags -->
+    {% assign muziek = site.muziek | map: 'tags' | join: ',' | split: ',' | uniq %}
+    {% for tag in muziek %}
     {% assign portfolio_tags = tag | join: '|' | append: '|' %}
     {% assign rawtags = rawtags | append: portfolio_tags %}
     {% endfor %}
@@ -71,7 +71,7 @@ layout: page
             {% endfor %}
 
             <!-- Portfolio -->
-            {% for note in site.portfolio %}
+            {% for note in site.muziek %}
             {% if note.tags contains tag %}
             <h5 class="tag-title">
                 <a href="{{ note.url | relative_url }}">
