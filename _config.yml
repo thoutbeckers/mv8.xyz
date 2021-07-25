@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "/mv8.xyz/"
+baseurl: "/"
 url: "https://thoutbeckers.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
