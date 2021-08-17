@@ -12,7 +12,9 @@
         </div>
         {% endif %}
         <span>
-          <header>
+          <header style="
+          height: 60px;
+      ">
             <h1>
               <a aria-label="{{ post.title }}" class="post-link" href="{{ post.url | relative_url }}">
                 {{ post.title }}
@@ -23,9 +25,9 @@
           {% if site.excerpt or site.theme_settings.excerpt %}
               <div class="excerpt">
                   {% if site.excerpt == "truncate" %}
-                     {{ post.content | strip_html | truncate: '250' | escape }}
+                     {{ post.content | truncate: '2000' }}
                   {% else %}
-                     {{ post.excerpt | strip_html | escape }}
+                     {{ post.excerpt }}
                   {% endif %}
               </div>
           {% endif %}
